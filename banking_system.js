@@ -122,7 +122,7 @@ const GLOBAL_CSS = `
 
 const DEMO_DATA = {
   profile: {
-    name: "Hemraj",
+    name: "User",
     age: 21,
     pan: "ABCDE1234F",
     aadhaar: "XXXX-XXXX-7823",
@@ -379,7 +379,7 @@ function UploadPanel({ onAnalyze, analyzing }) {
           <span style={{ color: C.gold }}>Intelligence Profile</span>
         </h1>
         <p style={{ color: C.textDim, fontSize: 15, maxWidth: 480, margin: "0 auto", lineHeight: 1.7 }}>
-          Upload bank statements, investment reports, or insurance documents. Profit Analysis will analyze everything and generate your complete wealth profile.
+          Upload bank statements, investment reports, or insurance documents. Financial Dashboard will analyze everything and generate your complete wealth profile.
         </p>
       </div>
 
@@ -477,7 +477,7 @@ function UploadPanel({ onAnalyze, analyzing }) {
           style={{ width: "100%", fontSize: 13 }}
           onClick={() => onAnalyze([], true)}
         >
-          ⚡ Load Demo Profile (Rajesh Kumar Sharma)
+          ⚡ Demo Profile (User)
         </button>
       </div>
     </div>
@@ -529,7 +529,7 @@ function Sidebar({ active, onSelect, data }) {
           F
         </div>
         <div>
-          <div style={{ fontWeight: 800, fontSize: 15, letterSpacing: -0.3 }}>Profit Analysis</div>
+          <div style={{ fontWeight: 800, fontSize: 15, letterSpacing: -0.3 }}>Financial Dashboard</div>
         </div>
       </div>
 
@@ -1113,7 +1113,7 @@ function ChatPage({ data }) {
   const [messages, setMessages] = useState([
     {
       role: "assistant",
-      content: `Hello! I'm your Profit Analysis assistant. I have analyzed **${data.profile.name}'s** complete financial profile. Ask me anything about your finances — net worth, investments, insurance, projections, or recommendations.`,
+      content: `Hello! I'm your Financial Dashboard assistant. I have analyzed **${data.profile.name}'s** complete financial profile. Ask me anything about your finances — net worth, investments, insurance, projections, or recommendations.`,
     },
   ]);
   const [input, setInput] = useState("");
@@ -1324,7 +1324,7 @@ function AnalyzingLoader({ files, isDemo }) {
       </div>
       <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 8 }}>Analyzing Your Finances</h2>
       <p style={{ color: C.textMuted, marginBottom: 32, fontSize: 14 }}>
-        Profit Analysis is building your complete wealth intelligence profile
+        Financial Dashboard is building your complete wealth intelligence profile
       </p>
 
       <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 28 }}>
@@ -1447,7 +1447,7 @@ function App() {
                 F
               </div>
               <span style={{ fontWeight: 800, letterSpacing: -0.3 }}>
-                Profit Analysis
+                Financial Dashboard
               </span>
             </div>
             <div style={{ display: "flex", gap: 8 }}>
